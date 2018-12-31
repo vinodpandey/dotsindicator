@@ -18,7 +18,14 @@ android {
   }
 }
 
-def androidSupportVersion = '28.0.0-beta01'
+allprojects {
+  repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+  }
+}
+
+def androidSupportVersion = '28.0.0'
 def constraintLayoutVersion = '1.1.2'
 
 dependencies {
@@ -31,5 +38,5 @@ dependencies {
   androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 //    implementation project(':viewpagerdotsindicator')
-  implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:2.1.2'
+  implementation 'com.github.vinodpandey:dotsindicator:2.1.2.1'
 }

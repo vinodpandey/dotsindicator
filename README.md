@@ -19,7 +19,21 @@ Don't forget to star the project if you like it!
 ![ezgif com-crop 8](https://user-images.githubusercontent.com/15737675/38330761-b64c7f3c-3851-11e8-9268-235ba8638467.gif)
 
 ## How to
-#### Gradle
+### Gradle (using my forked repository)
+```Gradle
+
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+     implementation 'com.github.vinodpandey:dotsindicator:2.1.2.1'
+}
+
+```
+
+#### Gradle (using original repository)
 ```Gradle
 dependencies {
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:2.1.2'
